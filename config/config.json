@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "noahflint",
+    "password": null,
+    "database": "expresso_weather_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "noahflint",
+    "password": null,
+    "database": "expresso_weather_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "noahflint",
+    "password": null,
+    "database": "expresso_weather_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
