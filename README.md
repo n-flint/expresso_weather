@@ -20,10 +20,26 @@ Expresso Weather is a JSON API that uses the Dark Sky API along with the Google 
 3. Migrate the with database `npx sequelize db:migrate`
 4. Run your npm server `npm start`
 
+  ### Testing
+  1. Globally isntall Jest
+    - `npm install jest -g`
+  2. Install [babel-jest](https://www.npmjs.com/package/babel-jest) and [supertest](https://github.com/visionmedia/supertest)
+    - `npm install jest -g`
+  3. Add a test script to the `package.json` file
+    - example
+        - //package.json
+          "scripts": {
+            "start": "node ./bin/www",
+            "test": "jest --watch"
+          },
+  4. Run the test suit from the terminal
+    - `npm test`
+
 ---
 
 ## Endpoints
   - [New Account Creation](#new-account-creation)
+  - [Logging In](#logging-in)
 
 
 ## New Account Creation
@@ -57,3 +73,35 @@ Send a POST request with an email, password and password confirmation. Successfu
   - A unique email must be provided
   - Password and confirmation both must match
   - Email, password and password must all be provided
+
+## Logging In
+
+
+Send a POST request with a valid email and password matching a user that has already been created. Successfull response returns that users API key.
+
+  #### POST /api/v1/sessions
+  ```
+  Content-Type: application/json
+  Accept: application/json
+  ```
+
+  ##### Request
+  ```
+  {
+    "email": "my_email@example.com",
+    "password": "password"
+  }
+  ```
+  ##### Response
+  ```
+  status: 200
+  body:
+
+  {
+    "api_key": "jgn983hy48thw9begh98h4539h4",
+  }
+  ```
+---
+
+## Contributing
+   - Please open a pull request to contribute!
