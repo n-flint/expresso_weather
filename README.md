@@ -45,7 +45,7 @@ Expresso Weather is a JSON API that uses the Dark Sky API along with the Google 
 
 ## New Account Creation
 
-Send a POST request with an email, password and password confirmation. Successful response inludes a newly generated API key for the new user, and the user is saved in the database. 
+Send a POST request with an email, password and password confirmation. Successful response inludes a status code of 201 and a newly generated API key for the new user. The user is also saved into the database. 
 
   #### POST /api/v1/users
   ```
@@ -78,7 +78,7 @@ Send a POST request with an email, password and password confirmation. Successfu
 ## Logging In
 
 
-Send a POST request with a valid email and password matching a user that has already been created. Successfull response returns that users API key.
+Send a POST request with a valid email and password matching a user that has already been created. Successfull response returns a status code of 200 and that users API key.
 
   #### POST /api/v1/sessions
   ```
