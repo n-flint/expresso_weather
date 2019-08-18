@@ -1,11 +1,11 @@
 # Expresso Weather
 
-Expresso Weather is a JSON API that uses the Dark Sky API along with the Google Geocoding API to return weather information based on a location provided by the user. The user must include a valid API key. The data returned includes houlry and daily objects base on the current weather. These objects include a summary, icon, temperature, percipitation percentages, as well as wind and visibility information. 
+Expresso Weather is a JSON API that uses the Dark Sky API along with the Google Geocoding API to return weather information based on a location provided by the user. The user must include a valid API key. The data returned includes hourly and daily objects base on the current weather. These objects include a summary, icon, temperature, percipitation percentages, as well as wind and visibility information. 
 
 ## Learning Goals
   - Utilize a project board to create and track details for project completion.
   - Practice written technical communication with concise and consistent git commits and clear pull requests.
-  - Implement testing in JavaScript.
+  - Implement testing in [Jest](https://jestjs.io/).
   - Familiarize self with mechanics of building an Express API.
 
 ## Technologies Used
@@ -21,7 +21,7 @@ Expresso Weather is a JSON API that uses the Dark Sky API along with the Google 
 4. Run your npm server `npm start`
 
   ### Testing
-  1. Globally isntall Jest
+  1. Globally install Jest
     - `npm install jest -g`
   2. Install [babel-jest](https://www.npmjs.com/package/babel-jest) and [supertest](https://github.com/visionmedia/supertest)
     - `npm install jest -g`
@@ -74,9 +74,9 @@ Send a POST request with an email, password and password confirmation. Successfu
   - A unique email must be provided
   - Password and confirmation both must match
   - Email, password and password must all be provided
+  - If these requirements are not met, a status code of 500 will be returned
 
 ## Logging In
-
 
 Send a POST request with a valid email and password matching a user that has already been created. Successfull response returns a status code of 200 and that users API key.
 
@@ -102,6 +102,9 @@ Send a POST request with a valid email and password matching a user that has alr
     "api_key": "jgn983hy48thw9begh98h4539h4",
   }
   ```
+
+  ##### Requirements
+  - A valid email and password must be provided, otherwise you will get 'Invalid Credentials
 ---
 
 ## Contributing
