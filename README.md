@@ -2,6 +2,11 @@
 
 Expresso Weather is a JSON API that uses the Dark Sky API along with the Google Geocoding API to return weather information based on a location provided by the user. This project uses Node.JS as well as Express.
 
+## Technologies Used
+  - [Node.JS](https://nodejs.org/en/)
+  - [Express](https://expressjs.com/)
+  - [Jest](https://jestjs.io/)
+
 ## Setup
 1. Clone this repository
 2. Install npm with the command `npm install`
@@ -12,7 +17,7 @@ Expresso Weather is a JSON API that uses the Dark Sky API along with the Google 
 ---
 
 ## Endpoints
- - [New Account Creation](#new-account-creation)
+  - [New Account Creation](#new-account-creation)
 
 
 ## New Account Creation
