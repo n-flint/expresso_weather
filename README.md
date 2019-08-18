@@ -27,10 +27,12 @@ Expresso Weather is a JSON API that uses the Dark Sky API along with the Google 
     - `npm install jest -g`
   3. Add a test script to the `package.json` file
     - example
+    ```
       "scripts": {
         "start": "node ./bin/www",
         "test": "jest --watch"
       },
+    ```
   4. Run the test suit from the terminal
     - `npm test`
 
