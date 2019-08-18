@@ -1,6 +1,12 @@
 # Expresso Weather
 
-Expresso Weather is a JSON API that uses the Dark Sky API along with the Google Geocoding API to return weather information based on a location provided by the user. This project uses Node.JS as well as Express.
+Expresso Weather is a JSON API that uses the Dark Sky API along with the Google Geocoding API to return weather information based on a location provided by the user. The user must include a valid API key. The data returned includes houlry and daily objects base on the current weather. These objects include a summary, icon, temperature, percipitation percentages, as well as wind and visibility information. 
+
+## Learning Goals
+  - Utilize a project board to create and track details for project completion.
+  - Practice written technical communication with concise and consistent git commits and clear pull requests.
+  - Implement testing in JavaScript.
+  - Familiarize self with mechanics of building an Express API.
 
 ## Technologies Used
   - [Node.JS](https://nodejs.org/en/)
@@ -47,11 +53,7 @@ Send a POST request with an email, password and password confirmation. Successfu
     "api_key": "jgn983hy48thw9begh98h4539h4",
   }
   ```
-
-
-
-
-be  more specific about what weather info they return
-different section for technoligies used
-learning goals
-short description as well as produciton link
+  ##### Requirements
+  - A unique email must be provided
+  - Password and confirmation both must match
+  - Email, password and password must all be provided
