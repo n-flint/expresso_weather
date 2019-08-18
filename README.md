@@ -19,10 +19,28 @@ Expresso Weather is a JSON API that uses the Dark Sky API along with the Google 
 
 Send a POST request with an email, password and password confirmation. Successful response inludes a newly generated API key for the new user, and the user is saved in the database. 
 
-  ##### POST /api/v1/users
+  #### POST /api/v1/users
   ```
   Content-Type: application/json
   Accept: application/json
+  ```
+
+  ##### Request
+  ```
+  {
+    "email": "my_email@example.com",
+    "password": "password"
+    "password_confirmation": "password"
+  }
+  ```
+  ##### Response
+  ```
+  status: 201
+  body:
+
+  {
+    "api_key": "jgn983hy48thw9begh98h4539h4",
+  }
   ```
 
 
